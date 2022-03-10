@@ -1,3 +1,7 @@
+#This is a fork of the following tool:https://github.com/trustedsec/tap
+
+I was on an engagement recently where I needed to edit this tool to accept prexisting SSH keys that were preconfigured on the jump host and the remote client machine we're trying to access. Essentially, now there's an option that will ask you if you have preconfigured keys you want to select. Just hit 'y' if this is true, then you want to give it the path to a private key the client will use to authenticate to the jump host. I.E. /root/.ssh/id_rsa. It will then skip configuring new keys and adding them to the jump host. However, do note that the public key must already be setup on the jump host for TAP to work.
+
 # The TrustedSec Attack Platform (TAP)
 
 TAP - Remote penetration testing platform builder.\
